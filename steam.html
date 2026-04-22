@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <title>医疗云影像</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/loaders/demo/demo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/loaders/loaders.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="public/jquery/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="home_page" class="home_page_div">
+        <div id="rm_home_page_back_div" class="home_page_back_div" hidden>
+            <img onclick="rm_home_page_div_back_icon()" class="home_page_div_back_icon" src="img/home_page_back2.svg" alt="">
+        </div>
+        <div class="home_page_top">
+            <img src="img/doctor.jpg" alt="">
+            <div class="home_page_top_div"></div>
+        </div>
+       <p id="home_page_hospital" class="home_page_hospital_p">衡阳市中心医院</p>
+       <p id="home_page_check_num" class="home_page_check_num_p">检查号:DR111281</p>
+        <table class="home_page_table">
+            <tr>
+                <td>
+                    <div class="home_page_report_div" onclick="run_report_page()">
+                    <a href="https://koghy.github.io/first/baogao.html"> <img src="img/report_icon.svg" alt="">
+                        <p>报告</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="home_page_img_div" onclick="open_blue_bird()">
+                        
+<a href="http://www.coolingesaving.com/cloud/qingniao/?a=86&b=DR111281&c=8837d3a2ae566aa60d59181f908ca23b"><img src="img/img_icon.svg" alt=""></a>
+                        <p>影像</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="report_page" class="report_page_div" hidden>
+        <div class="report_page_top">
+            <p onclick="close_report_page()">返回</p>
+            <!-- <img src="img/return.svg" alt="" onclick="close_report_page()"> -->
+        </div>
+        <!-- 存放报告图片的div -->
+        <div id="report_img_div" class="report_page_content_div">
+            <img id="report_page_img" src="" alt="">
+            <!--报告图片-->
+            <!--<img id="report_page_img" src="img/report.png" alt="">-->
+        </div>
+    </div>
+    <div id="report_loading" class="report_loading_page" hidden>
+        <div class="loader-inner line-spin-fade-loader center_position">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>

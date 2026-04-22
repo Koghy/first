@@ -1,0 +1,185 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9e9e9e;
+    border-radius: 4px;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.home_page_div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+.home_page_back_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    z-index: 2;
+    background-color: rgba(137, 137, 137, 0.2);
+}
+
+.home_page_div_back_icon{
+    position: absolute;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home_page_top {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.home_page_top img {
+    min-height: 100%;
+    min-width: 100%;
+    /* opacity: 0.4; */
+}
+
+.home_page_top_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background: -webkit-linear-gradient(#e7e7e7, white);
+    background: -o-linear-gradient(#e7e7e7, white);
+    background: -moz-linear-gradient(#e7e7e7, white);
+    background: linear-gradient(#e7e7e7, white);
+}
+
+.home_page_hospital_p{
+    font-size: 21px;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0 10px;
+}
+
+.home_page_check_num_p{
+    font-size: 17px;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 50px 0;
+    padding: 0 10px;
+}
+
+.home_page_table {
+    width: 100%;
+    height: auto;
+}
+
+.home_page_table td {
+    padding: 0 35px;
+}
+
+.home_page_table img {
+    height: 60px;
+}
+
+.home_page_table p {
+    color: #777777;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.home_page_report_div {
+    width: auto;
+    height: auto;
+    float: right;
+    text-align: center;
+}
+
+.home_page_img_div {
+    width: auto;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.report_page_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.report_page_top {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    background-color: #22384d;
+}
+
+.report_page_top p {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    line-height: 42px;
+    margin-left: 10px;
+}
+
+.report_page_top img {
+    position: absolute;
+    height: 80%;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.report_page_content_div {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.report_page_content_div img {
+    width: 100%;
+}
+
+.report_loading_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.center_position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

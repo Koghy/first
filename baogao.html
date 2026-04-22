@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>医疗云影像</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="public/loaders/demo/demo.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="public/loaders/loaders.css"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <script src="public/jquery/jquery-3.3.1.min.js"></script>
+
+
+
+    <style>
+      html,
+      body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        overflow: hidden;
+      }
+
+      .report_page_div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+      }
+
+      .report_page_top {
+        position: relative;
+        width: 100%;
+        height: 46px;
+        background-color: #22384d;
+      }
+
+      .report_page_top p {
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+        color: white;
+        margin: 0;
+        line-height: 46px;
+        margin-left: 10px;
+      }
+
+      .report_page_top img {
+        position: absolute;
+        height: 40px;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .report_page_content_div {
+        position: absolute;
+        top: 46px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+      }
+
+      .report_page_content_div img {
+        width: 100%;
+      }
+
+      .report_bottom_div {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        z-index: 5;
+      }
+
+      .report_bottom_div_ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .report_bottom_div_ul li {
+        position: relative;
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        list-style-type: none;
+      }
+
+      .reoprt_mum_p {
+        width: fit-content;
+        width: 100%;
+        padding: 6px 0px;
+        border-radius: 3px;
+        background-color: rgba(137, 137, 137, 0.5);
+        margin: 0;
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      .previous_report_img {
+        height: 24px;
+        opacity: 0.6;
+        right: 25%;
+      }
+
+      .next_report_img {
+        height: 24px;
+        opacity: 0.6;
+        left: 25%;
+      }
+
+      .report_loading_page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.5;
+      }
+
+      .center_position {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .x_center_position {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+    <script>
+      /* //放入报告图片
+        function show_report_img(img) {//img为图片路径
+            $("#report_page_img").attr("src", img);
+        }
+
+        //新版 报告页返回按钮
+        function return_home_page() {
+            // 方 返回首页
+        }
+
+        // 上一张报告
+        function run_previous_report() {
+
+        }
+
+        // 下一张报告
+        function run_next_report() {
+
+        }
+
+        // 显示loading
+        function close_roport_loading() {
+            $("#report_loading").show();
+        }
+
+        // 移除loading
+        function close_roport_loading() {
+            $("#report_loading").hide();
+        } */
+    </script>
+  </head>
+
+  <body>
+    <div id="report_page" class="report_page_div">
+      <div class="report_page_top">
+        <!-- <p onclick="return_home_page()">返回</p> -->
+        <img src="img/return.svg" alt="" onclick="return_home_page()" />
+      </div>
+      <!-- 存放报告图片的div -->
+      <div id="report_img_div" class="report_page_content_div">
+        <!--报告图片-->
+        <img src="img/baogao.jpg" alt="">
+        <!-- <img id="" src="img/report.png" alt=""> -->
+      </div>
+    </div>
+
+    <div id="report_bottem_div_id" class="report_bottom_div" hidden>
+      <ul class="report_bottom_div_ul">
+        <li>
+          <!-- 上一张报告 -->
+          <img
+            id="previous_report"
+            class="x_center_position previous_report_img"
+            src="img/previous_report.svg"
+            alt=""
+            onclick="run_previous_report()"
+          />
+        </li>
+        <li>
+          <p class="reoprt_mum_p center_position">
+            <span id="current_report_page_num">1</span>/<span
+              id="total_report_page_num"
+              >2</span
+            >页
+          </p>
+        </li>
+        <li>
+          <!-- 下一张报告 -->
+          <img
+            id="next_report"
+            class="x_center_position next_report_img"
+            src="img/next_report.svg"
+            alt=""
+            onclick="run_next_report()"
+          />
+        </li>
+      </ul>
+    </div>
+
+
+  
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
